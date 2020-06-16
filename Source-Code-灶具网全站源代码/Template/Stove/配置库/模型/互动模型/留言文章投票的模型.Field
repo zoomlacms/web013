@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <FieldID>1325</FieldID>
+    <ModelId>17</ModelId>
+    <FieldName>pl</FieldName>
+    <FieldAlias>评论</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>OptionType</FieldType>
+    <Content>1=好评||中评||差评,Property=True,Default=</Content>
+    <OrderId>0</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1326</FieldID>
+    <ModelId>17</ModelId>
+    <FieldName>fjym</FieldName>
+    <FieldAlias>附加说明</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content>TitleSize=35,IsPassword=text,DefaultValue=</Content>
+    <OrderId>1</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

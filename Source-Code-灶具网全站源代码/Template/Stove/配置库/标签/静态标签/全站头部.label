@@ -1,0 +1,96 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>626</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="top"&gt;
+&lt;div id="topL"&gt;
+&lt;span&gt;天气预报&lt;/span&gt;
+&lt;iframe src="http://m.weather.com.cn/m/pn7/weather.htm?id=101240101T " width="180" height="20" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" style=" float:left;margin-top:5px; margin-left:10px;"&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div id="topc"&gt;&lt;a href="/"&gt;新版意见反馈&lt;/a&gt;&lt;/div&gt;
+&lt;div id="topr"&gt;
+&lt;div id="topr_l"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/user/login.aspx"&gt;登录&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;img src="{$CssDir/}Images/x2.jpg"&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/user/register.aspx"&gt;注册&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="topr_r"&gt;
+&lt;iframe src="/user/login2.aspx" frameborder="0" scrolling="no" height="30px" width="270px"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt; &lt;!--top end--&gt;
+&lt;div id="header"&gt;
+&lt;div id="head"&gt;
+&lt;div id="logo"&gt;&lt;a href="/" title="{$SiteTitle/}"&gt;&lt;img src="{$CssDir/}Images/logo.gif" alt="{$SiteTitle/}"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div id="head_c"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetProposeinfo(7)/}"&gt;&lt;img src="{$CssDir/}Images/buy1.gif"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(7)/}"&gt;&lt;img src="{$CssDir/}Images/buy2.gif"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetProposeinfo(10)/}"&gt;&lt;img src="{$CssDir/}Images/buy3.gif"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(2)/}"&gt;&lt;img src="{$CssDir/}Images/buy4.gif"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(70)/}"&gt;&lt;img src="{$CssDir/}Images/buy5.gif"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="head_r"&gt;
+&lt;iframe src="/Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0" width="290px" height="24px"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!-- head end --&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;div id="nav"&gt;
+&lt;span&gt;&lt;a href="/user/"&gt;&lt;img src="{$CssDir/}Images/nav_r1.gif"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li id="menu0"&gt;&lt;a href="/"&gt;首页&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu7"&gt;&lt;a href="{ZL:GetNodeLinkUrl(7)/}"&gt;供应&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="p7"&gt;&lt;a href="{ZL:GetProposeinfo(7)/}"&gt;求购&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu1"&gt;&lt;a href="{ZL:GetNodeLinkUrl(1)/}"&gt;公司&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu59"&gt;&lt;a href="{ZL:GetNodeLinkUrl(59)/}"&gt;品牌&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu10"&gt;&lt;a href="{ZL:GetNodeLinkUrl(10)/}"&gt;展会&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu2"&gt;&lt;a href="{ZL:GetNodeLinkUrl(2)/}"&gt;团购&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="p10"&gt;&lt;a href="{ZL:GetProposeinfo(10)/}"&gt;专题&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu6"&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}"&gt;招商&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu4"&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}"&gt;图库&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu5"&gt;&lt;a href="{ZL:GetNodeLinkUrl(5)/}"&gt;视频&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="menu3"&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}"&gt;资讯&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;
+&lt;li id="p59"&gt;&lt;a href="{ZL:GetProposeinfo(59)/}"&gt;加盟信息&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!--nav end--&gt;
+&lt;/div&gt;
+&lt;div id="Prompt"&gt;
+&lt;div id="prompt_l"&gt;
+温馨提示：2012年5月24日，
+&lt;span&gt;广汽传祺郴州鹏洋店即将盛大开业了，&lt;/span&gt;
+&lt;a href="#"&gt;了解详情&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id="pronpt_r"&gt;
+&lt;ul&gt;
+&lt;li&gt;客服QQ:&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wpa.qq.com/msgrd?v=3&amp;amp;uin=228388629&amp;amp;site=qq&amp;amp;menu=yes"&gt;&lt;img src="{$CssDir/}Images/kf1.gif"&gt;&lt;/a&gt;&lt;/li&gt; 
+&lt;li class="Phone"&gt;客服热线：8881819&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

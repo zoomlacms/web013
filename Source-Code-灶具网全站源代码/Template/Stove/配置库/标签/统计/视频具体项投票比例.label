@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>725</LabelID>
+    <LabelName>视频具体项投票比例</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>统计</LabelCate>
+    <LabelDesc />
+    <LabelParam>pl,好评,1,好评|GeneralID,1,1,内容ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Pub_WZTP</LabelTable>
+    <LabelField>count ( ID ) as nn</LabelField>
+    <LabelWhere>PubContentid=@GeneralID and Parentid=0  And pl like '%@pl%'</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;script&gt;
+var num='{ZL.Label id="总投票数" GeneralID="@GeneralID" /}';
+var a=Math.round({Field="nn"/}/num);
+if(num==0)
+ {
+  document.write('0%');
+ 	}
+else {document.write(a*100+'%');
+}
+&lt;/script&gt;</LabelContent>
+    <LabelCount>1</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

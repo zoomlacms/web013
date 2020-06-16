@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>713</LabelID>
+    <LabelName>投票说明</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;ul&gt;
+&lt;li&gt;1、评选时间：2012年3月1日——6月1日&lt;/li&gt;
+&lt;li&gt;2、每人每隔2小时对同一个品牌可投票一次&lt;/li&gt;
+&lt;li&gt;3、对作弊的品牌进行撤销资格处理&lt;/li&gt;
+&lt;li&gt;4、参评企业必须是集成环保灶企业的生产
+      或者经销单位&lt;/li&gt;
+&lt;li&gt;请不要对其他品牌进行恶意的言论攻击&lt;/li&gt;
+&lt;li&gt;6、主办单位保留此活动的最终解释权&lt;/li&gt;
+&lt;/ul&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

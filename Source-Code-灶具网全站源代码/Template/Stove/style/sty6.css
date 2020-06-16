@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#000;}
+#top_bg{ margin:auto; background:url(images/comp/black_bg.jpg) top center repeat-x;}
+#top_1 a,#top_1,#top_com,#top_nav a,#top_statu,#top_statu a{ color:#fff;}
+#top_nav{ height:29px;background:url(images/comp/black_nav.jpg) repeat-x; border-bottom:1px #000 solid;}
+#top_nav li{border-right:1px #000 solid;}
+#top_nav li a:hover{ background:url(images/comp/nav_on6.jpg) repeat-x; color:#FFF; text-decoration:none;}
+#m_l{ float:left; width:200px;  background:url(images/comp/black_index_l.jpg) no-repeat;}
+.m_r_title{ color:#fff;background:url(images/comp/black_t.jpg) repeat-x; }
+#m_head{ border-left:#666 1px solid; border-right:#666 1px solid; border-bottom:#666 1px solid;}

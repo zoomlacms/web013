@@ -1,0 +1,643 @@
+﻿{ZL.Source id="招商模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="招商模型数据源标签" FD="Title" page="0"/}</title>
+<meta name="Keywords" content="{SField sid="招商模型数据源标签" FD="Tagkey" page="0"/}">
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<link href="{$CssDir/}company.css" rel="stylesheet" type="text/css" />
+<link href="{$CssDir/}jqzoom.css" rel="stylesheet" type="text/css" />
+{ZL:HTML5()/} 
+<script type="text/javascript" src="{$CssDir/}js/jquery.min.js"></script>
+<script type="text/javascript" src="{$CssDir/}js/jqzoom.pack.1.0.1.js"></script>
+<style>
+#menu{SField sid="招商模型数据源标签" FD="NodeID" page="0"/} a{color:#000; font-weight:bold; background:url({$CssDir/}Images/navli_bg.jpg) no-repeat;}
+</style>
+</head>
+<body style="background:none">
+<div id="nomal_clikc" class="nomal_clikc" style="display:none">
+{ZL.Label id="全站头部"/}
+<div id="Supply" style="height:auto;">
+<div class="Supply_top">
+<span class="Current">当前位置：<a href="/">{$SiteName/}</a> >> <a href="{ZL:GetNodeLinkUrl(7)/}">供应</a> >> {SField sid="招商模型数据源标签" FD="szxy" page="0"/} </span>
+<span class="Release"><a href="/user/"><img src="{$CssDir/}Images/nr_fb.gif"></a></span>
+</div>
+<div class="sumain">
+<div class="Supply_l">
+<h1>{SField sid="招商模型数据源标签" FD="Title" page="0"/}</h1>
+<div id="Celebrity_l" style="width:330px;">
+<div id="content_txt" class="border">
+<table class="center_tdbgall" cellSpacing=0 cellPadding=0 width=100% align=center border=0>
+    <tr>
+      <td align=center vAlign=middle width="98%" height="300" style="text-align:center;"><div id='imgBox'></div>
+<script language='javascript'>
+var siteurl="{$UploadDir/}";
+var firstpho="";
+var photos='{SField sid="招商模型数据源标签" FD="PicUrl"/}';
+var pho=photos.split("$");
+var arrUrlName=new Array();
+var arrUrl=new Array();
+for(i=0;i<pho.length;i++)
+{
+   arrUrlName[i]=pho[i].split("|")[0];
+   if(pho[i].split("|")[1].indexOf("http://")==-1)
+   {
+   arrUrl[i]=siteurl+"/"+pho[i].split("|")[1];
+   }else
+   {
+	   arrUrl[i]= pho[i].split("|")[1];
+	   }
+   
+   if(i==0)
+   {
+	   if(pho[i].split("|")[1].indexOf("http://")==-1)
+	   {
+      firstpho=siteurl+"/"+pho[i].split("|")[1];
+	   }else
+	   {
+		   irstpho=pho[i].split("|")[1];
+	   }
+   }	
+}
+
+function writepicnum(ii)
+{
+	document.getElementById("nowpicnum").value=ii;
+	if(arrUrl[ii]!=undefined)
+	{
+	ViewPhoto(arrUrl[ii]);
+	}
+for(i=0;i<pho.length;i++){
+		var bd=document.getElementById("border"+i);
+		if(i==ii && document.getElementById("border"+i)!=null){
+	bd.style.border="1px solid #F00";
+	}
+	else if(document.getElementById("border"+i)!=null){
+bd.style.border='1px solid #ccc';
+	}	}
+}
+ 
+function writepicnums(ii)
+{
+	var tempcc= parseInt(document.getElementById("nowpicnum").value)+1;
+	if(tempcc>pho.length-1){tempcc=pho.length-1}
+	var page =parseInt((tempcc+1)/3);
+	var pageco=(tempcc+1)%5;
+	if(pageco==1){
+	ShowUrlList(page+1);
+	}
+   return tempcc;
+}
+ 
+function writepicnumsdown(ii)
+{
+	if(parseInt(document.getElementById("nowpicnum").value)<0){document.getElementById("nowpicnum").value="0"}
+	var tempvalue = parseInt(document.getElementById("nowpicnum").value)-1;
+	if(tempvalue<0){tempvalue=0;}
+	var page = (tempvalue+1)/3;
+	var pageco=(tempvalue+1)%3;
+	if(pageco==0){
+	ShowUrlList(page-1);
+	}
+   return tempvalue;
+}
+	
+function ViewPhoto(PhotoUrl){
+  var strHtml;
+  var FileExt=PhotoUrl.substr(PhotoUrl.lastIndexOf('.')+1).toLowerCase();
+  if(FileExt=='gif'||FileExt=='jpg'||FileExt=='png'||FileExt=='bmp'||FileExt=='jpeg'){
+    strHtml="<table width=30% border=0 align=center cellpadding=0 cellspacing=0><tr><td width=1%><a href='javascript:void(0)' onclick='writepicnum(writepicnumsdown())' class='btn_L1'>上一张</a></td><td align=center><a href='"+PhotoUrl+"' target='PhotoView'><img src='"+PhotoUrl+"' border='0' onload='if(this.width>330) this.width=330' style='border:1px #CCC solid; width:300px; height:270px;'></a></td><td width=1%><a href='javascript:void(0)' onclick='writepicnum(writepicnums())'  class='btn_R1'>下一张</a></td></tr></table>";
+  }else if(FileExt=='swf'){
+    strHtml="<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='330' height='300' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0'><param name='movie' value='"+PhotoUrl+"'><param name='quality' value='high'><embed src='"+PhotoUrl+"' pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='330' height='300'></embed></object>";
+  }else{
+    strHtml=PhotoUrl;
+  }
+   document.getElementById('imgBox').innerHTML=strHtml;
+	}
+	
+	if(firstpho=="")
+	{
+	ViewPhoto(arrUrl[0]);
+	}else
+	{
+	ViewPhoto(firstpho);
+	}
+</script>
+</td>
+    </tr> 
+    <tr>
+      <td class=Article_tdbgall align=middle><input name="nowpicnum" id="nowpicnum" type="hidden" value="0" />
+<div id='PhotoUrlList'></div>
+<script language='javascript'>
+function ShowUrlList(page){
+  if(arrUrl.length<=1) return '';
+  var dTotalPage=arrUrl.length/5;
+  var TotalPage;
+  var MaxPerPage=5;
+  if(arrUrl.length%MaxPerPage==0){TotalPage=Math.floor(dTotalPage);}else{TotalPage=Math.floor(dTotalPage)+1;}
+  if(page<1) page=1;
+  if(page>TotalPage) page=TotalPage;
+  var strPage='<table><tr>';
+  for(var i=(page-1)*MaxPerPage;i<arrUrl.length&&i<page*MaxPerPage;i++){
+    strPage+="<td><a href='#Title' onclick=ViewPhoto('"+arrUrl[i]+"')><img src='"+arrUrl[i]+"' border='0' width='80'></a></td>";
+    if((i+1)%5==0&&i+1<page*MaxPerPage){strPage+='</tr><tr>';}
+  }
+  strPage+="</tr></table>";
+  if(TotalPage>1){strPage+="<table><tr><td><a href='javascript:ShowUrlList(1)'> </a> <a href='javascript:ShowUrlList("+(page-1)+")' class='btn_L'>上一页</a> <a href='javascript:ShowUrlList("+(page+1)+")' class='btn_R'>下一页</a> <a href='javascript:ShowUrlList("+TotalPage+")'> </a></td></tr></table>";}
+  document.getElementById('PhotoUrlList').innerHTML=strPage;
+}
+ShowUrlList(1);
+</script></td>
+    </tr>
+    <tr>
+      <td class=main_tdbg_760>
+  </td>
+    </tr>
+    <tr>
+      <td class=main_shadow></td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+<div id="Celebrity_r">
+<ul>
+<li>发布日期：{SField sid="招商模型数据源标签" FD="fbrq" page="0"/}</li>
+<li>有效期至：{SField sid="招商模型数据源标签" FD="deadline" page="0"/}</li>
+<li>浏览次数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div><!-- Supply_l en -->
+
+<div id="Supply_r" >
+<div id="Data" style="background:url({$CssDir/}Images/bgbs.jpg) no-repeat">
+<span class="Data_top">公司基本资料信息</span>
+<div id="Data_co">
+<strong>{ZL.Label id="根据会员名输出公司名称" UserName="{SField sid="招商模型数据源标签" FD="Inputer" page="0"/}" /}</strong>
+
+<ul id="Gp1">
+<li><img src="{$CssDir/}Images/gs_zg2.gif"> [第一年]指数:3</li>
+<li><img src="{$CssDir/}Images/nr_hd6.gif">[诚信档案]</li>
+<li><span>联系人： 张慧（女士）</span></li>
+<li><span>电 话：020-28637259 </span></li>
+<li><span>地 区：广东-广州市 </span></li>
+<li><span>地 址：广州市白云区机场路1438号齐富路口(国美电器楼上)尚明大厦17层 </span></li>
+<div class="clear"></div>
+</ul>
+<div class="clear"></div>
+<span id="enterinb"><a href="/Page/Default.aspx?pageid={SField sid="招商模型数据源标签" FD="hyid" page="0"/}"><img src="{$CssDir/}Images/btn_homepage.gif"></a></span>
+<ul id="Gp2">
+<li>[未认证]</li>
+<li>[未认证档案]</li>
+</ul>
+</div>
+</div>
+</div><!-- supply_r end -->
+<div class="clear"></div>
+</div>
+<div class="becont">
+<p>{SField sid="招商模型数据源标签" FD="zsxq" page="0"/}</p>
+<div class="clear"></div>
+</div>
+<div class="Supply_top">
+<strong style="font-size:14px;">留言咨询</strong>
+</div>
+<div id="messageb">
+{Pub.LYZX/}
+</div>
+<div class="pubbrand">
+<div id="Poll" style="background:url({$CssDir/}Images/pubgbg.jpg) repeat-x;">
+<div class="pubtit">
+<div class="Polltitle">相关评论</div>
+<div class="puball">共0条 [<a href="#">查看全部</a>]</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<form name="form8" method="post" action="/PubAction.aspx">
+<p class="publevel"><label id="good">
+<span id="best"><input name="good" id="best" type="radio" value="好评" checked="checked" />好评 <img src="{$CssDir/}Images/good.jpg"></span>
+<span id="good"><input type="radio"  id="sss"  name="good" value="中评" />中评 <img src="{$CssDir/}Images/better.jpg"></span>
+<span id="bad"><input type="radio"  id="bad"  name="good" value="差评" />差评 <img src="{$CssDir/}Images/worse.jpg"></span></label>
+<input name="PubTitle" type="hidden" id="PubTitle" size="50" value="{SField sid="招商模型数据源标签" FD="Title" page="0"/}">
+      <input type="hidden" name="PubID" id="PubID" value="8">
+      <input type="hidden" name="PubContentid" id="PubContentid" value="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}">
+      <input name="PubContent" type="hidden" id="PubContent" value="对{SField sid="招商模型数据源标签" FD="Title" page="0"/}的评论"></p>
+<p class="wordlt">附加文字在200字以内，当前已经输入 <span style="color:red; float:none" id="chars">0</span> 字<br>
+<textarea name="fjym" cols="80" rows="5" id="fjym" onfocus="F();" onkeyup="S();"></textarea></p>
+<input type="submit" name="button2" id="button2" onClick="c()" value="提 交" class="btnbg">
+</form>
+<ul class="liscore" style="width:645px;">
+<li>
+<span style="background:#ECFDD2;float:right;">
+{ZL.Label id="具体项投票数" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" pl="好评" /} 
+{ZL.Label id="好评数" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" pl="好评" Gid="backwid1"/}</span>
+<span style="float:left;">好评 <img src="{$CssDir/}Images/good.jpg"></span>
+<div class="line_yo"><div  id="backwid1" style="background:#FFA40D; height:10px;"></div></div><span class="percent">
+{ZL.Label id="具体项投票比例" pl="好评" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" /}
+
+</span>
+<div class="clear"></div>
+</li>
+<li>
+<span style="background:#F5FEE9;float:right;">{ZL.Label id="具体项投票数" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" pl="中评" /} </span>
+<span style="float:left;">中评 <img src="{$CssDir/}Images/better.jpg"></span>
+<div class="line_yo"><div  id="backwid2" style="background:#FFA40D; height:10px;"></div></div><span class="percent">
+{ZL.Label id="具体项投票比例" pl="中评" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" /}
+{ZL.Label id="好评数" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" pl="中评"  Gid="backwid2" /}</span>
+<div class="clear"></div>
+</li>
+
+<li>
+<span style="background:#F9FEF1; float:right;">{ZL.Label id="具体项投票数" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" pl="差评" /}</span><span style="float:left;">差评 <img src="{$CssDir/}Images/worse.jpg"></span>
+<div class="line_yo"><div id="backwid3" style="background:#FFA40D; height:10px;"></div></div>
+<span class="percent">{ZL.Label id="具体项投票比例" pl="差评" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" /}
+{ZL.Label id="好评数" GeneralID="{SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" pl="差评"  Gid="backwid3" /}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="clear"></div>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+{ZL.Label id="全站底部"/}
+</div>
+
+<script>
+var Gp='{ZL.Label id="根据UserName得到会员组" UserName="admin" /}';
+if(Gp==1){
+	document.getElementById("Gp1").style.display="";
+	document.getElementById("Gp2").style.display="none";
+	}
+	else{
+		document.getElementById("Gp2").style.display="";
+	document.getElementById("Gp1").style.display="none";
+		}
+
+</script>
+
+
+<div id="nomal_clikc1"  class="nomal_clikc" style="display:none">
+
+ <!-- top start-->
+<div id="top_bg">
+<div id="top">
+<div id="top_1"><a href="javascript:window.external.addFavorite('{$SiteURL/}/Page/Default.aspx?pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}','{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}');">加入收藏</a> | 
+<a  onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$SiteURL/}/Page/Default.aspx?pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}');" href="#">设为首页</a></div>
+<div id="top_img_1">
+<script>
+var Group='{ZL.Label id="根据会员ID输出会员组" UserID="{SField sid="标准黄页申请信息数据源" FD="UserID" page="0"/}" /}';
+if(Group==2){
+ document.write('<img src="{$CssDir/}images/comp/top_img_1.jpg">');}
+if(Group==1){
+ document.write('<img src="{$CssDir/}images/comp/free_bg.gif">');}	
+</script>
+</div>
+<div id="top_com">
+<strong>{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}</strong><br>
+<b>{SField sid="标准黄页申请信息数据源" FD="mainsale" page="0"/}</b>
+</div>
+
+<div id="top_nav">
+<ul>
+<li id="comp0"><a href="/Page/Default.aspx?pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}">网站首页</a></li>
+{ZL.Label id="显示栏目列表" userid="{SField sid="标准黄页申请信息数据源" FD="UserID" page="0"/}" Styles="{SField sid="标准黄页申请信息数据源" FD="NodeStyle" page="0"/}" /}
+</ul>
+</div>
+<div id="nav_img">
+<script>
+var a='{SField sid="标准黄页申请信息数据源" FD="banner" page="0"/}';
+if(a==''){
+	document.write("<img src='{$CssDir/}images/comp/top_img_2.jpg' width='960' height='300'>");
+ 	}
+else{
+	
+	document.write('<img src="{ZL:GetPicUrl({SField sid="标准黄页申请信息数据源" FD="banner" page="0"/})/}" width="960">');
+ 	}
+</script>
+ 
+</div>
+
+<div id="top_statu"><span id="jb51" class="STYLE4"></span>
+<script>setInterval("document.getElementById('jb51').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);</script>
+<img src="{$CssDir/}images/comp/top_home.gif">您当前的位置：<a href="/Page/Default.aspx?pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}">首页</a>></div>
+</div>
+<div class="clear"></div>
+</div>
+<!-- top end-->
+<!-- main start-->
+<div id="main">
+<div id="m_l">
+<div class="m_l_title">
+  <blockquote>
+    <p><span><a href="/Page/Pagelist.aspx?Nodeid=3&pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}"><img src="{$CssDir/}images/comp/more.gif"></a></span>新闻中心</p>
+  </blockquote>
+</div>
+<div class="l_list">
+<ul>
+{ZL.Label id="输出黄页新闻列表_不分页" NodeID="3" ShowNum="5" UserName="{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}" TitleNum="26"/}
+</ul>
+</div>
+<div class="m_l_title"><span><a href="/Page/Pagelist.aspx?Nodeid=2&pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}"><img src="{$CssDir/}images/comp/more.gif"></a></span>产品分类</div>
+<div id="l_list2">
+<a href="/Page/Pagelist.aspx?Nodeid=2&pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}">全部分类</a><br/>
+<a href="/Page/Pagelist.aspx?Nodeid=7&pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}">整体厨房</a><br/>
+<a href="/Page/Pagelist.aspx?Nodeid=8&pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}">橱柜系列</a><br/>
+<a href="/Page/Pagelist.aspx?Nodeid=9&pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}">厨电系列</a><br/>
+</div>
+<div class="m_l_title">
+<label>站内搜索</label>
+</div>
+<div id="search">
+  <input type="text"value="输入关键字">
+  <select>
+<option>供应产品</option>
+</select><a href="#"><img src="{$CssDir/}images/comp/btn.jpg"></a>
+</div>
+<div class="m_l_title"><span><a href="/Page/Pagelist.aspx?Nodeid=1&pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}"><img src="{$CssDir/}images/comp/more.gif"></a></span>荣誉资质</div>
+<div class="l_list">
+<ul>{ZL.Label id="输出黄页新闻列表_不分页" NodeID="1" ShowNum="5" UserName="{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}" TitleNum="26"/}
+</ul>
+</div>
+<div class="m_l_title"><span><a href="/Page/Pagelist.aspx?Nodeid=10&pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}"><img src="{$CssDir/}images/comp/more.gif"></a></span>友情链接</div>
+<div class="l_list" style="height:auto">
+<ul>
+{ZL.Label id="输出黄页友情链接列表" NodeID="10" ShowNum="10" UserName="{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}" /}
+
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="m_r" style="background:#fff;">
+<div style="width:1px; height:800px; float:left; "></div>
+ <div class="Supply_l">
+<h1>{SField sid="招商模型数据源标签" FD="Title" page="0"/}</h1>
+<div id="Celebrity_l" style="width:330px;">
+<div id="content_txt" class="border">
+<table class="center_tdbgall" cellSpacing=0 cellPadding=0 width=100% align=center border=0>
+<tr>
+<td align=center vAlign=middle width="98%" height="300" style="text-align:center;"><div id='imgBox1'></div>
+<script language='javascript'>
+var siteurl="{$UploadDir/}";
+var firstpho="";
+var photos='{SField sid="招商模型数据源标签" FD="PicUrl"/}';
+var pho=photos.split("$");
+var arrUrlName=new Array();
+var arrUrl=new Array();
+for(i=0;i<pho.length;i++)
+{
+   arrUrlName[i]=pho[i].split("|")[0];
+   if(pho[i].split("|")[1].indexOf("http://")==-1)
+   {
+   arrUrl[i]=siteurl+"/"+pho[i].split("|")[1];
+   }else
+   {
+	   arrUrl[i]= pho[i].split("|")[1];
+	   }
+   
+   if(i==0)
+   {
+	   if(pho[i].split("|")[1].indexOf("http://")==-1)
+	   {
+      firstpho=siteurl+"/"+pho[i].split("|")[1];
+	   }else
+	   {
+		   irstpho=pho[i].split("|")[1];
+	   }
+   }	
+}
+
+function writepicnum(ii)
+{
+	document.getElementById("nowpicnum").value=ii;
+	if(arrUrl[ii]!=undefined)
+	{
+	ViewPhoto(arrUrl[ii]);
+	}
+for(i=0;i<pho.length;i++){
+		var bd=document.getElementById("border"+i);
+		if(i==ii && document.getElementById("border"+i)!=null){
+	bd.style.border="1px solid #F00";
+	}
+	else if(document.getElementById("border"+i)!=null){
+bd.style.border='1px solid #ccc';
+	}	}
+}
+ 
+function writepicnums(ii)
+{
+	var tempcc= parseInt(document.getElementById("nowpicnum").value)+1;
+	if(tempcc>pho.length-1){tempcc=pho.length-1}
+	var page =parseInt((tempcc+1)/3);
+	var pageco=(tempcc+1)%5;
+	if(pageco==1){
+	ShowUrlList(page+1);
+	}
+   return tempcc;
+}
+ 
+function writepicnumsdown(ii)
+{
+	if(parseInt(document.getElementById("nowpicnum").value)<0){document.getElementById("nowpicnum").value="0"}
+	var tempvalue = parseInt(document.getElementById("nowpicnum").value)-1;
+	if(tempvalue<0){tempvalue=0;}
+	var page = (tempvalue+1)/3;
+	var pageco=(tempvalue+1)%3;
+	if(pageco==0){
+	ShowUrlList(page-1);
+	}
+   return tempvalue;
+}
+	
+function ViewPhoto(PhotoUrl){
+  var strHtml;
+  var FileExt=PhotoUrl.substr(PhotoUrl.lastIndexOf('.')+1).toLowerCase();
+  if(FileExt=='gif'||FileExt=='jpg'||FileExt=='png'||FileExt=='bmp'||FileExt=='jpeg'){
+    strHtml="<table width=30% border=0 align=center cellpadding=0 cellspacing=0><tr><td width=1%><a href='javascript:void(0)' onclick='writepicnum(writepicnumsdown())' class='btn_L1'>上一张</a></td><td align=center><a href='"+PhotoUrl+"' target='PhotoView'><img src='"+PhotoUrl+"' border='0' onload='if(this.width>330) this.width=330' style='border:1px #CCC solid'></a></td><td width=1%><a href='javascript:void(0)' onclick='writepicnum(writepicnums())'  class='btn_R1'>下一张</a></td></tr></table>";
+  }else if(FileExt=='swf'){
+    strHtml="<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='330' height='300' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0'><param name='movie' value='"+PhotoUrl+"'><param name='quality' value='high'><embed src='"+PhotoUrl+"' pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='330' height='300'></embed></object>";
+  }else{
+    strHtml=PhotoUrl;
+  }
+   document.getElementById('imgBox1').innerHTML=strHtml;
+	}
+	
+	if(firstpho=="")
+	{
+	ViewPhoto(arrUrl[0]);
+	}else
+	{
+	ViewPhoto(firstpho);
+	}
+</script>
+</td>
+    </tr> 
+    <tr>
+      <td class=Article_tdbgall align=middle><input name="nowpicnum" id="nowpicnum" type="hidden" value="0" />
+<div id='PhotoUrlList1'></div>
+<script language='javascript'>
+function ShowUrlList(page){
+  if(arrUrl.length<=1) return '';
+  var dTotalPage=arrUrl.length/5;
+  var TotalPage;
+  var MaxPerPage=5;
+  if(arrUrl.length%MaxPerPage==0){TotalPage=Math.floor(dTotalPage);}else{TotalPage=Math.floor(dTotalPage)+1;}
+  if(page<1) page=1;
+  if(page>TotalPage) page=TotalPage;
+  var strPage='<table><tr>';
+  for(var i=(page-1)*MaxPerPage;i<arrUrl.length&&i<page*MaxPerPage;i++){
+    strPage+="<td><a href='#Title' onclick=ViewPhoto('"+arrUrl[i]+"')><img src='"+arrUrl[i]+"' border='0' width='80'></a></td>";
+    if((i+1)%5==0&&i+1<page*MaxPerPage){strPage+='</tr><tr>';}
+  }
+  strPage+="</tr></table>";
+  if(TotalPage>1){strPage+="<table><tr><td><a href='javascript:ShowUrlList(1)'> </a> <a href='javascript:ShowUrlList("+(page-1)+")' class='btn_L'>上一页</a> <a href='javascript:ShowUrlList("+(page+1)+")' class='btn_R'>下一页</a> <a href='javascript:ShowUrlList("+TotalPage+")'> </a></td></tr></table>";}
+  document.getElementById('PhotoUrlList1').innerHTML=strPage;
+}
+ShowUrlList(1);
+</script></td>
+    </tr>
+    <tr>
+      <td class=main_tdbg_760>
+  </td>
+    </tr>
+    <tr>
+      <td class=main_shadow></td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+<div id="Celebrity_r">
+<ul>
+<li>品牌：{SField sid="招商模型数据源标签" FD="pp" page="0"/}</li>
+<li>型号：{SField sid="招商模型数据源标签" FD="xh" page="0"/}</li>
+<li>规格：{SField sid="招商模型数据源标签" FD="gg" page="0"/}</li>
+<li>单价：{SField sid="招商模型数据源标签" FD="price" page="0"/}</li>
+<li>起定：{SField sid="招商模型数据源标签" FD="num" page="0"/}</li>
+<li>供货总量：{SField sid="招商模型数据源标签" FD="total" page="0"/}</li>
+<li>发货期限：{SField sid="招商模型数据源标签" FD="senttime" page="0"/}</li>
+<li>所在地：{ZL.Label id="根据会员名输出公司所在地" UserName="{SField sid="招商模型数据源标签" FD="Inputer" page="0"/}" /}</li>
+<li>有效期至：{SField sid="招商模型数据源标签" FD="effect" page="0"/}</li>
+<li>浏览次数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></li>
+</ul>
+<span class="Inquiry"><a href="/user/default1.aspx?ID={SField sid="招商模型数据源标签" FD="GeneralID" page="0"/}" target="_blank"><img src="{$CssDir/}Images/nr_hd4.gif"></a></span>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<!-- main end-->
+<div id="botton">
+<ul style="width:470px; margin:auto">
+<li><a href="/Page/Default.aspx?pageid={SField sid="标准黄页申请信息数据源" FD="ID" page="0"/}">首页</a>><a href="/Page/Pagelist.aspx?Nodeid={SField sid="招商模型数据源标签" FD="NodeID" page="0"/}&pageid={$GetRequest(pageid)$}">{ZL.Label id="根据节点ID得到栏目名称" NodeID="{SField sid="招商模型数据源标签" FD="NodeID" page="0"/}" /}</a></li>
+ {ZL.Label id="显示栏目列表" userid="{SField sid="标准黄页申请信息数据源" FD="UserID" page="0"/}" Styles="{SField sid="标准黄页申请信息数据源" FD="NodeStyle" page="0"/}" /}
+ <li><a href="/user">管理入口</a></li>
+ </ul>
+ <div class="clear"></div>
+{SField sid="标准黄页申请信息数据源" FD="copyright" page="0"/} 技术支持：<a href="http://hx008.com" target="_blank">华夏互联</a>
+</div>
+</div>
+</div>
+
+<!--<script language="JavaScript">
+//定义一个tick函数，以获取系统的时间
+function tick()
+{
+var year,month,day,hours,minutes,seconds,ap;
+var intYear,intMonth,intDay,intHours,intMinutes,intSeconds;
+var today;
+today=new Date();
+intYear=today.getYear();
+intMonth=today.getMonth()+1;
+intDay=today.getDate();
+intHours=today.getHours();
+intMinutes=today.getMinutes();
+intSeconds=today.getSeconds();
+//获取系统时间的小时数
+if(intHours==0)
+{
+hours=intHours+":";
+ap="凌晨";
+}
+else if(intHours<12)
+{
+hours=intHours+":";
+ap="早晨";
+}
+else if(intHours==12)
+{
+hours=intHours+":";
+ap="中午";
+}
+else
+{
+intHours=intHours-12;
+hours=intHours+":";
+ap="下午";
+}
+//获取系统时间的分数
+if(intMinutes<10)
+{
+minutes="0"+intMinutes+":";
+}
+else
+minutes=intMinutes+":";
+//获取系统时间的秒数
+if(intSeconds<10)
+seconds="0"+intSeconds+" ";
+else
+seconds=intSeconds+" ";
+timeString=year+month+day+hours+minutes+seconds+ap;
+Clock.innerHTML=timeString;
+//每隔0.1秒钟执行一次tick函数
+window.setTimeout("tick()",100);
+}
+window.onload=tick;
+</script>
+--> 
+
+<script>
+var a='{$GetRequest(class)$}';
+if(a=='1'){ 
+	 document.getElementById("nomal_clikc1").style.display="block";
+  document.body.style.background="#ffb619"
+
+	}
+	else{	 document.getElementById("nomal_clikc").style.display="block"
+}
+
+function wid(num,id,nam){
+	var d=0;
+	d=((parseInt(id)/parseInt(num))*300); 
+	if(d>293){
+	  	document.getElementById(nam).style.width="293px";
+ 		}
+		else{
+  	document.getElementById(nam).style.width=d+"px";
+	}
+ } 
+
+function S() {
+Inner('chars', Dd('fjym').value.length);
+}
+function c(){
+if(Dd('fjym').value.length > 200) {
+confirm('内容最多200字');
+Dd('content').focus();
+return false;
+}
+return true;
+}
+</script>
+<script>
+var sty='{SField sid="标准黄页申请信息数据源" FD="NStyle" page="0"/}';
+ 	document.write('<link href="{$CssDir/}sty'+sty+'.css" rel="stylesheet" type="text/css" />');
+ 	</script>
+</body>
+</html>

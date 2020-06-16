@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>740</LabelID>
+    <LabelName>留言咨询调用标签</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>互动标签</LabelCate>
+    <LabelDesc>ZL_Pub_LYZX分页标签</LabelDesc>
+    <LabelParam />
+    <LabelTable>ZL_Pub_LYZX left join ZL_Pub on ZL_Pub_LYZX.Pubupid=ZL_Pub.Pubid</LabelTable>
+    <LabelField>ZL_Pub_LYZX.*,ZL_Pub.*</LabelField>
+    <LabelWhere>ZL_Pub_LYZX.Pubupid=9 And ZL_Pub_LYZX.PubContentid={$GetRequest(ItemID)$} And ZL_Pub_LYZX.Pubstart=1</LabelWhere>
+    <LabelOrder>ZL_Pub_LYZX.ID DESC</LabelOrder>
+    <LabelContent>{Repeate}
+用户名:{Field="PubUserName"/}&lt;br /&gt;
+评论说明:{Field="PubContent"/}&lt;br /&gt;
+用户IP:{Field="PubIP"/}&lt;br /&gt;
+评论时间:{Field="PubAddTime"/}&lt;br /&gt;{/Repeate}&lt;br /&gt;
+{ZL.Page/}</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelAddUser>1</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo />
+    <addroot />
+    <setroot />
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

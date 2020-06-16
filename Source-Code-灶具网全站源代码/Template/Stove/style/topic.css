@@ -1,0 +1,446 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*专题频道*/
+#tmain,#tlmain,#tcmain,#tpmain,#tp_top,#tpmain1{ margin:auto; width:960px; clear:both;}
+#tmain,#tlmain{margin-top:10px;}
+#tmainL{float:left; width:650px;}
+.tmainL1{ border:1px solid #ddd;}
+.tmainL1 li{float:left; width:145px; padding-left:15px; margin-top:10px; line-height:24px; margin-bottom:6px; }
+.tmainL1 li img ,#tlmainR li img{ width:126px; height:98px; border:1px solid #ccc; padding:2px;}
+.tmainL1 li img:hover,#tlmainR li img:hover{border:1px solid #f60;}
+#tmainR{float:right; width:300px;}
+.tmainR1{border:1px solid #ccc; }
+.tmainR1 ul{margin-top:6px;}
+.tmainR1 li{float:left; width:110px; background:url(Images/icon2.jpg) 5px no-repeat; padding-left:12px; line-height:26px; margin-left:15px;}
+.tmainR1 li a:hover{text-decoration:none;}
+.ttopic2{height:30px; background:url(Images/tp_list.jpg) repeat-x; padding-left:10px; font-size:14px; font-weight:bold; line-height:30px; color:#333;}
+.ttopic2 span{float:right; margin-right:10px;}
+.ttopic2 span a{font-size:12px; color:#333; font-weight:normal;}
+.ttopic2 span a:hover{color:#f60; text-decoration:none;}
+.tmainR2{ margin-top:10px; border:1px solid #ccc; }
+.tmainR2 ul{margin:6px auto; background:url(Images/list_num.jpg)  no-repeat}
+.tmainR2 li{ padding-left:30px; line-height:23px; margin-left:5px;}
+.tmainR2 li a:hover{ text-decoration:none;}
+
+/*专题列表*/
+#tlmainL{float:left; width:148px; background:url(Images/tlist_li.jpg) repeat-y;}
+#tlmainL li{width:148px; height:38px; background:url(Images/tlist_li.jpg) no-repeat; text-align:center; line-height:38px;}
+#tlmainR{float:right; width:802px; border:1px solid #ddd;}
+#tlmainR li{float:left; width:145px; padding-left:15px; line-height:24px; margin-top:10px; margin-bottom:10px;}
+#tlmainR li a{color:#333;}
+#tlmainR li a:hover,#tlmainL li a:hover{color:#d70913; text-decoration:none;}
+#tlmainR li span{color:#999;}
+
+/*专题页面*/
+#tcmain{ margin-top:10px;}
+#topic_con{ width:960px; height:204px;}
+#tcmain1{ float:left; width:670px;}
+
+#tcmainl1{ float:left; width:328px; height:336px; margin-top:10px; border:1px solid #ddd;}
+#tcmainl1 p{padding:5px; line-height:20px; text-indent:20px;}
+#new_topic{float:left; width:328px; height:336px; margin-top:10px; margin-left:10px; border:1px solid #ddd;}
+#new_topic li{background:url(Images/icon2.jpg) 5px no-repeat; padding-left:15px; line-height:22px;}
+#new_topic li a{color:#333;}
+#new_topic li span{float:right; margin-right:10px; color:#999;}
+#tcmain1_2{float:right; width:346px; height:204px; border:1px solid #ddd;}
+#tcmain1_2 p{text-indent:20px; line-height:22px; padding:5px; text-align:justify; text-justify:distribute;}
+.asd{margin-top:10px;}
+.asd img{width:670px;}
+.list_cy li{background:url(Images/icon2.jpg) 5px no-repeat; padding-left:10px; line-height:24px; }
+.list_cy li a{color:#333}
+.list_cy li a:hover{text-decoration:none; color:#f60;}
+.more1{margin-right:10px; }
+.more1 a{font-size:12px;}
+
+#tp_top img{width:960px; height:360px;}
+#tpmain{background:#fff; padding-bottom:10px;}
+#tpmainL{float:left; width:300px; height:260px; margin-top:10px; margin-left:6px;}
+#tpmainL img{width:300px; height:260px;}
+#tpmainC{float:left; width:324px; height:260px; margin-left:10px; margin-top:10px; border:1px solid #DA2713;}
+.tp_tit{ height:30px; background:url(Images/tp_tit.jpg) repeat-x; font-size:14px; line-height:30px; padding-left:15px; color:#fff; font-weight:bold;}
+#tpmainC li{line-height:25px; background:url(Images/icon2.jpg) 5px no-repeat; padding-left:15px;}
+#tpmainC li a{color:#333;}
+#tpmainC li a:hover{color:#f60;}
+#tpmainR{float:right; width:300px; height:260px; margin-top:10px; margin-right:8px; border:1px solid #DA2713;}
+#tpmainR p{ height:220px; overflow-y:scroll; text-indent:20px; line-height:24px; margin:8px;}
+#sypnosis p{ width:300px; padding:5px; text-indent:20px; line-height:22px;}
+#tp_product{width:944px; margin:auto; margin-top:10px; border:1px solid #DA2713;}
+.tp_protit{height:40px; background:url(Images/pro_tit.jpg) repeat-x; font-size:14px; line-height:30px; padding-left:15px; color:#fff; font-weight:bold;}
+#tp_product li{float:left; width:188px; margin-top:10px; line-height:24px; text-align:center; }
+#tp_product li img{width:150px; height:140px; border:1px solid #ddd; padding:2px;}
+#tp_product li img:hover{border:1px solid #f60;}
+
+/**/
+#ttp{width:1400px; height:375px; background:url(Images/topbg.jpg) no-repeat; margin:auto; clear:both;}
+#tpnav{width:1500px; height:120px; margin:auto; background:url(Images/tpnavbg2.jpg) ;clear:both;}
+#tpnav li{float:left; width:143px; height:50px; text-align:center; line-height:50px; background:url(Images/mbg1.jpg) no-repeat; margin-left:20px; margin-top:3px;}
+#tpnav li a{font-size:16px; color:#fff; font-weight:bold;}
+#tpnav li a:hover{color:#FFFF00; text-decoration:none;}
+#tpmaina,#tpmaina2,#about_act{width:980px;   margin:auto; clear:both; background:url(Images/tpmainbg.gif) no-repeat;}
+#tpmainaL{float:left; width:320px; height:424px; margin-top:10px; margin-left:8px;}
+#tpcontain{width:320px; height:200px;}
+#toc{margin-top:10px;}
+#toc span{ display:block; width:63px; height:23px; background:url(Images/tpop_tit.jpg) no-repeat; text-align:center; color:#E97C30; line-height:23px; }
+#toc strong{color:#f00;}
+#toc p{text-indent:20px; line-height:22px;}
+#toc p a{color:#f00;}
+#tpmainaC{float:left; width:374px; margin-left:20px; margin-top:10px;}
+#tpmg{width:360px; margin:auto; margin-top:15px; border-bottom:1px solid #ffb555;}
+#tpmg li{float:left; padding-left:7px;}
+#tpmg li img{width:106px; height:78px; padding:2px;}
+#tpnews {margin-top:10px;}
+#tpnews li{background:url(Images/icon22.jpg) 5px no-repeat; padding-left:15px; line-height:23px;}
+#tpnews li a{color:#333;}
+#tpnews li a:hover{text-decoration:none; color:#f60;}
+#tpmainaR{float:right; width:240px; margin-top:10px; margin-right:8px;}
+.tpmainaR1{ height:198px; background:#ffefb1;}
+.tittp{height:30px; background:#de0000; line-height:30px; padding-left:15px; color:#ffeea0; font-size:14px; font-family:"微软雅黑";}
+.tpmainaR1 li{line-height:22px; padding-left:8px;}
+#tpmaina2{margin-top:10px; background:#fff;}
+#listt{width:961x; height:43px; margin-left:10px;  background:url(Images/listt.jpg) no-repeat;}
+#listt strong{font-size:16px; color:#fff; line-height:43px; margin-left:15px; font-family:"微软雅黑";}
+.brand{float:left; margin:10px;}
+.usetime{float:left; color:#f00; line-height:50px;}
+#barndl{float:left; width:230px; margin-left:10px;}
+#barndl p{ text-indent:20px; line-height:23px;}
+#barndr{float:right; width:712px; border-left:1px solid #E9E9E9;}
+.tit_ulist{height:32px; background:url(Images/ulist-tit.jpg) repeat-x; line-height:32px; color:#74A601; font-weight:bold; padding-left:10px; margin-right:10px; border-top:1px solid #E9E9E9;}
+.ulist{width:712px; margin:auto; padding-bottom:10px;}
+.ulist ul{ margin-top:10px; }
+.ulist li{float:left; width:174px; text-align:center; line-height:18px;}
+.ulist li a:hover{color:#f60;}
+.ulist li img{width:140px; height:55px; border:2px solid #000;}
+.ulist li img:hover{border-color:#F00;}
+#about_act{margin-top:10px; background:#fff;}
+#about_act p{margin:0px auto; line-height:24px; text-indent:20px; padding:10px;}
+/*团购内容页*/
+#deal_share{ margin-top:10px;}
+#deal_share .deal_share-fix{float:left;width:10px;height:30px;background:url(images/tuan/bg-share-corner.gif) no-repeat 100% -50px;}/* deal */
+#deal_share .deal_share-top{float:left;_display:inline;margin-left:40px;background:url(images/tuan/bg-share-corner.gif) no-repeat 0 0;}
+#deal_share .deal_share-links{float:left;width:453px;height:23px;padding:7px 0 0 20px;}
+#deal_share .deal_share-links h4{float:left;font-weight:normal;}
+#deal_share .deal_share-links ul{zoom:1;}
+#deal_share .deal_share-links li{float:left;margin-top:2px;margin-left:3px;}
+#deal_share a{float:left;dwidth:30px;height:16px;line-height:16px; line-height:18px;padding-left:20px;background:url(images/tuan/icons-share.gif) no-repeat 0 0;margin-right:10px;color:#000;font-size:12px;font-family:Helvetica,arial,sans-serif;outline:0;}
+#deal_share a:hover{color:#0981be;}
+#deal_share a img{margin-right:2px;vertical-align:-2px;}
+#deal_share .kaixin{background-position:0 -40px;}
+#deal_share .renren{background-position:0 -80px;}
+#deal_share .douban{background-position:0 -120px;}
+#deal_share .email{background-position:0 -161px;}
+#deal_share .sina{background-position:0 -201px;}
+#deal_share-im-c{display:none;clear:both;width:483px;margin-left:40px;}
+#deal_share-im-c .deal_share-im-b{height:50px;padding:10px 10px 10px 20px;border-left:1px solid #89b4d6;border-right:1px solid #89b4d6;background-color:#e5f8ff;}
+#deal_share-im-c .f-input{width:345px;*width:320px;}
+#deal_share-im-c .formbutton{display:inline;}
+#deal-intro{ clear:both; border:2px solid #ff9966; padding-top: 25px; padding-right: 10px; padding-bottom: 15px; height:460px; background-color:#f8f8f0;}
+#deal-intro .main{
+	float:left;
+	width:250px;
+	_margin-right:10px;
+	_display:inline;
+	font-family:Helvetica, arial, sans-serif;
+	color: #000000;
+	background-color: #eeeeee;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	margin: 0px;
+}
+.mainsh{
+	float:left;
+	width:215px;
+	_margin-right:10px;
+	_display:inline;
+	font-family:Helvetica, arial, sans-serif;
+	color: #000000;
+	background-color: #eeeeee;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	text-indent: 10px;
+}
+#deal-intro .side{
+	float:right;
+	width:670px;
+	margin-right:0;
+	margin-left:20px;
+}
+#deal-intro .side .deal-buy-cover-img img{
+	width:670px;
+	z-index: 2;
+	overflow:hidden;
+}
+/* image rotate */
+#team_images {
+	width:670px;
+	margin-bottom:0px;
+	height:355px;
+	overflow:hidden;
+	z-index: 2;
+}
+#team_images ul{list-style:none;}
+#team_images a{outline:none; cursor:pointer;}
+#team_images .mid{ width:670px;padding:0;position:relative;}
+#team_images .mid ul{width:670px;height:355px;position:relative;overflow:hidden;}
+#team_images .mid ul li{width:670px;height:355px; position:absolute; left:665px;top:0;}
+#team_images .mid ul .first{left:0;}
+#team_images #img_list{position:absolute; right:10px; bottom:10px;}
+#team_images #img_list a{display:block; float:left; margin:2px 0 0 4px; border:solid 1px #333; line-height:20px; padding:0 5px; background:#fff; color:#000;}
+#team_images #img_list a.active{line-height:24px; padding:0 7px; border-color:#ff6600; font-weight:bold; margin-top:0; color:#ff6600;}
+/* end */
+
+
+#content .digest{ margin-top:20px; color:#096; line-height:26px; font-size:13px;
+	background:url(images/tuan/bg-deal-voice-quote.gif) left top no-repeat;
+	color:#666; text-align:justify; text-justify:inter-ideograph; text-indent:20px;}
+	#content .digest h2{ padding-left:35px; font-size:26px; font-weight:normal; font-family:microsoft yahei; color:#40B3BF;}
+#deal-intro h1{
+	font-size:30px;
+	line-height:1.2;
+	font-family:'微软雅黑', arial, sans-serif;
+	padding-top: 0;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-left: 10px;
+	text-shadow: 1px 1px 1px #A3A3A3;
+}
+#deal-intro h1 span{font-family:arial,sans-serif;}
+#deal-intro .deal-buy{
+	position:relative;
+	left: -90px;
+}
+#deal-intro .deal-today-link{text-decoration:none;}
+#deal-intro .deal-price-tag{
+	position:absolute;
+	z-index:1;
+	left:0px;
+	width:340px;
+	height:85px;
+	_background:transparent;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/tuan/deal_tag.png');	background-image: url(images/tuan/deal_tag.png);
+	background-repeat: no-repeat;
+	background-position: 250 0;
+}
+#deal-intro .deal-price{
+	position:absolute;
+	z-index:1;
+	left:-2px;
+	width:340px;
+	height:85px;
+	line-height:82px;
+	padding-left:0px;
+}
+#deal-intro .deal-price span{
+	position:absolute;
+	z-index:2;
+	top:6px;
+	left:180px;
+	color:#fff;
+	margin: 0px;
+	padding: 0px;
+}
+#deal-intro .deal-price strong{
+	float:left;
+	font-size:32px; padding-left:30px;
+	color:#fff;
+	font-weight:normal;
+}
+#deal-intro .deal-price span a{
+	display:block;
+	width:144px;
+	height:53px;
+	line-height:53px;
+	margin-top:19px;
+	outline:0;
+	padding-left: 25px;
+}
+
+.deal-discount{
+	width:248px;
+	margin-top:77px;
+	font-weight:bold;
+	background-color: #FFF4EC;
+	border: 1px solid #FBBFA0;
+	padding:10px 0px;
+}
+.deal-discount p{ clear:both; line-height:30px;}
+.deal-discount span{ float:left; width:76px; display:block; text-align:center;}
+.deal-box{
+	margin-top:12px;
+	padding:8px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.deal-timeleft{background-image: url("images/tuan/bg-deal-open.gif");background-position: 45% 30%;background-repeat: no-repeat;height:90px;padding-left:5px;
+padding-right:5px;color:#333;border: 1px solid #FBBFA0; background-color:#FFF4EC;}
+.deal-timeleft h3{font-size:14px;font-weight:normal;margin-bottom:15px;}
+.deal-timeleft li{float: left;line-height:40px;margin-right: 2px;}
+.deal-timeleft li span{float:left;text-align:center;*margin-top:-1px;padding-right:2px;*padding-right:0;font-size: 22px;line-height:40px;}
+.deal-off{background-image:url(images/tuan/bg-deal-end.gif);}
+.deal-status{
+	padding:15px 8px;
+	text-align:center;
+	background-color: #fff4ec;
+	border: 1px solid #FBBFA0;
+}
+
+.deal-buy-tip-top{line-height:1.2;margin-bottom:5px;font-size:18px;font-weight:bold;}
+.deal-buy-tip-total{margin-top:10px;line-height:1.2;font-size:18px;font-weight:bold;}
+.deal-buy-tip-notice{font-size:12px;}
+.deal-buy-ended{margin-top:45px; color:#f00;font-size:12px; margin-left:30px;}
+.deal-buy-on{margin-bottom:5px;font-size:16px;font-weight:bold;}
+.deal-buy-on img{position:relative;left:-9px;top:9px;}
+.deal-buy-tip-btm{font-size:12px;}
+
+.deal-buy-soldout{
+	height:89px;
+	background-image: url(images/tuan/sold-out.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+.deal-buy-success{
+	height:110px;
+	background-image: url(images/tuan/deal-end.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+.deal-buy-failure{height:89px;background:url(images/tuan/bg-deal-expired-fail.gif) no-repeat 50% 0;}
+.deal-buy-seconds{height:89px;background:url(images/tuan/bg-deal-expired-seconds.gif) no-repeat 50% 0;}
+
+/*按钮的四种状态*/
+.deal-price-buy1{
+	position:absolute;
+	padding-left:0px;
+	padding-top:10px;
+	width:134px;
+	height:62px;
+	background:url(images/tuan/button-deal-buy.gif) no-repeat ;
+	margin-top: 10px;
+	cursor: pointer;
+	z-index: 2;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left:10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: left;
+	border:0px;
+}
+
+.deal-price-buy{
+	position:absolute;
+	padding-left:0px;
+	padding-top:10px;
+	width:134px;
+	height:62px;
+	background:url(images/tuan/button-deal-buy.gif) no-repeat ;
+	margin-top: 25px;
+	cursor: pointer;
+	z-index: 2;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: left;
+}
+.deal-price-miaosha{
+	position:absolute;
+	padding-left:0px;
+	padding-top:10px;
+	width:134px;
+	height:62px;
+	background-image:url(images/tuan/button-deal-buy_second.gif);
+	background-repeat: no-repeat;
+	margin-top: 25px;
+	cursor: pointer;
+	z-index: 2;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: left;
+}
+.deal-price-over{
+	position:absolute;
+	padding-left:0px;
+	padding-top:10px;
+	width:134px;
+	height:62px;
+	background-image:url(images/tuan/bg-deal-soldout-text.gif);
+	background-repeat: no-repeat;
+	margin-top: 25px;
+	cursor: pointer;
+	z-index: 2;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: left
+}
+.deal-price-end{
+	position:absolute;
+	padding-left:0px;
+	padding-top:10px;
+	width:134px;
+	height:62px;
+	background-image:url(images/tuan/bg-deal-expired-text.gif);
+	background-repeat: no-repeat;
+	margin-top: 25px;
+	cursor: pointer;
+	z-index: 2;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: left
+}
+/*按钮的四种状态结束*/
+/*2.21版本-团购未开始按钮状态-2011-3-8开始*/
+.deal-price-notstart{
+	position:absolute;
+	padding-left:0px;
+	padding-top:10px;
+	width:134px;
+	height:62px;
+	background-image:url(images/tuan/button-deal-notstart.gif);
+	background-repeat: no-repeat;
+	margin-top: 25px;
+	cursor: pointer;
+	z-index: 2;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: left
+}
+/*2.21版本-团购未开始按钮状态-2011-3-8结束*/
+
+.deal-today-link-xx {
+	font-size:32px;
+	font-weight:bold;
+	color: #000000;
+	font-family: "微软雅黑";
+	margin-left: 5px;
+}

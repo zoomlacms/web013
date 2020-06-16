@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>35</ModelID>
+    <ModelName>企业资质</ModelName>
+    <Description />
+    <TableName>ZL_Page_qyzz</TableName>
+    <ItemName>证书</ItemName>
+    <ItemUnit>个</ItemUnit>
+    <ItemIcon>Default.gif</ItemIcon>
+    <ModelType>4</ModelType>
+    <ContentModule>/内容页/默认企业资质内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

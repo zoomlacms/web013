@@ -1,0 +1,831 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <FieldID>1447</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>Title</FieldName>
+    <FieldAlias>内容标题</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>0</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1448</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>NodeID</FieldName>
+    <FieldAlias>所属节点</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>1</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1449</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>SpecialID</FieldName>
+    <FieldAlias>所属专题</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>2</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1450</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>InfoID</FieldName>
+    <FieldAlias>其他节点</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>3</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1451</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>Titlecolor</FieldName>
+    <FieldAlias>标题颜色</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>4</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1452</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>Hits</FieldName>
+    <FieldAlias>点击数</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>NumType</FieldType>
+    <Content />
+    <OrderId>5</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1453</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>GeneralID</FieldName>
+    <FieldAlias>内容ID</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>6</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1454</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>Tagkey</FieldName>
+    <FieldAlias>关键字</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>7</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1455</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>EliteLevel</FieldName>
+    <FieldAlias>推荐级别</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>NumType</FieldType>
+    <Content />
+    <OrderId>8</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1456</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>HtmlLink</FieldName>
+    <FieldAlias>静态页面地址</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>9</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1457</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>IsCreate</FieldName>
+    <FieldAlias>是否已生成</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>NumType</FieldType>
+    <Content />
+    <OrderId>10</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1458</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>InPuter</FieldName>
+    <FieldAlias>录入者</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>11</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1459</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>Status</FieldName>
+    <FieldAlias>状态</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>NumType</FieldType>
+    <Content />
+    <OrderId>12</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1460</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>UpDateTime</FieldName>
+    <FieldAlias>更新时间</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>DateType</FieldType>
+    <Content />
+    <OrderId>13</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1461</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>CreateTime</FieldName>
+    <FieldAlias>生成时间</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>DateType</FieldType>
+    <Content />
+    <OrderId>14</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1462</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>UpDateType</FieldName>
+    <FieldAlias>更新时间类型</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>NumType</FieldType>
+    <Content />
+    <OrderId>15</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1463</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>PdfLink</FieldName>
+    <FieldAlias>PDF地址</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>16</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1464</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>tablename</FieldName>
+    <FieldAlias>表名</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>17</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1465</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>ItemID</FieldName>
+    <FieldAlias>表的记录</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>18</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1466</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>Template</FieldName>
+    <FieldAlias>模板</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>19</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1467</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>Subtitle</FieldName>
+    <FieldAlias>副标题</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>20</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1468</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>PYtitle</FieldName>
+    <FieldAlias>拼音缩写</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>21</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1469</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>FirstNodeID</FieldName>
+    <FieldAlias>根节点ID</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>NumType</FieldType>
+    <Content />
+    <OrderId>22</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1470</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>TitleStyle</FieldName>
+    <FieldAlias>标题样式</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content />
+    <OrderId>23</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>true</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1520</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>xh</FieldName>
+    <FieldAlias>型号</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content>TitleSize=35,IsPassword=text,DefaultValue=</Content>
+    <OrderId>24</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1521</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>gg</FieldName>
+    <FieldAlias>规格</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content>TitleSize=35,IsPassword=text,DefaultValue=</Content>
+    <OrderId>25</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1522</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>pp</FieldName>
+    <FieldAlias>品牌</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content>TitleSize=35,IsPassword=text,DefaultValue=</Content>
+    <OrderId>26</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1524</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>price</FieldName>
+    <FieldAlias>单价</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>NumType</FieldType>
+    <Content>TitleSize=35,NumberType=1,DefaultValue=,NumSearchType=1,NumRangType=1,NumSearchRang=,NumLenght=0</Content>
+    <OrderId>27</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1525</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>num</FieldName>
+    <FieldAlias>最小起订量</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>OptionType</FieldType>
+    <Content>1=1台|1台$0||3台|3台$0||5台|5台$0||10台|10台$0||30台|30台$0,Property=True,Default=</Content>
+    <OrderId>28</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1526</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>total</FieldName>
+    <FieldAlias>供货总量</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content>TitleSize=35,IsPassword=text,DefaultValue=</Content>
+    <OrderId>29</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1527</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>senttime</FieldName>
+    <FieldAlias>发货期限</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content>TitleSize=35,IsPassword=text,DefaultValue=</Content>
+    <OrderId>30</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1528</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>effect</FieldName>
+    <FieldAlias>有效期</FieldAlias>
+    <FieldTips />
+    <Description>1年，2年，或长期有效</Description>
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content>TitleSize=35,IsPassword=text,DefaultValue=</Content>
+    <OrderId>31</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1529</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>PicUrl</FieldName>
+    <FieldAlias>产品图</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>MultiPicType</FieldType>
+    <Content>ChkThumb=1,ThumbField=Thumbpic,Warter=0,MaxPicSize=1024,PicFileExt=jpg|gif|bmp|jpeg</Content>
+    <OrderId>32</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1530</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>Procontent</FieldName>
+    <FieldAlias>详细信息</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>MultipleHtmlType</FieldType>
+    <Content>Width=715,Height=400,IsEditor=2</Content>
+    <OrderId>33</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1534</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>szxy</FieldName>
+    <FieldAlias>所属行业</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>OptionType</FieldType>
+    <Content>1=集成灶||油烟机||消毒柜||燃气灶||电机||空调||电磁锅||洗碗机||冰箱||豆浆机||热水器||酒柜||液晶电视||3D电视||LED电视||家庭影院||其他分类,Property=True,Default=</Content>
+    <OrderId>34</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1535</FieldID>
+    <ModelId>31</ModelId>
+    <FieldName>gyxz</FieldName>
+    <FieldAlias>供应性质</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>OptionType</FieldType>
+    <Content>1=供应||提供服务||供应二手||提供加工||提供合作||库存,Property=True,Default=</Content>
+    <OrderId>35</OrderId>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>679</LabelID>
+    <LabelName>输出最新专题标题列表_无时间</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ShowNum,10,1,显示数|TitleNum,30,1,标题长</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Special</LabelTable>
+    <LabelField>SpecID,SpecName</LabelField>
+    <LabelWhere />
+    <LabelOrder>SpecID DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;a href="/Special_{Field="SpecID"/}/Default.aspx" title="{Field="SpecName"/}"&gt;{ZL:CutText({Field="SpecName"/},@TitleNum,)/}&lt;/a&gt;&lt;/li&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

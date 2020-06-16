@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>26</ModelID>
+    <ModelName>展会模型</ModelName>
+    <Description />
+    <TableName>ZL_C_Exhibit</TableName>
+    <ItemName>展会</ItemName>
+    <ItemUnit>场</ItemUnit>
+    <ItemIcon>movie.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/默认展会模型内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

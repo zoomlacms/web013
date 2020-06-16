@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* 黄页CSS Document Powered by Zoomla!逐浪CMS*/
+
+*{ margin:0px; padding:0px;}
+body{font-size:12px; font-family:Arial, Helvetica, sans-serif;}
+li{list-style-type:none;}
+img{border:none;}
+a{text-decoration:none; color:#333;}
+a:hover{text-decoration:underline; color:#F00;}
+.clear{ clear:both}
+.hidden{ display:none;}
+
+#top,#main,#botton{margin:auto; width:960px; clear:both;}/*全局框架 */
+#top_1{ height:25px;line-height:20px; padding-left:10px;}
+#top_1 a{padding-right:5px; padding-left:5px;}
+#top_img_1{ float:right;width:180px; height:50px; margin-top:-10px;}
+#top_com{ height:115px; font-size:14px; padding-top:30px;line-height:25px;}
+#top_com strong{ font-size:30px; font-family:microsoft Yahei;}
+#top_com b{ padding-left:5px;}
+#top_nav ul{ margin-left:20px;}
+#top_nav li{ float:left; width:98px; line-height:29px; font-size:14px; font-weight:bold;text-align:center;}
+#top_nav li a{ float:left; width:99px; height:29px; display:block;}
+
+#top_statu{ height:25px; line-height:24px;} 
+#top_statu img{ float:left; margin-left:10px; padding-top:5px;}
+#top_statu span{ float:right; padding-right:20px;}
+
+#m_r{ float:right; width:752px;}
+#m_head{ width:750px; background:#FFF;}
+.m_r_title{ height:30px;line-height:32px; font-size:14px; font-weight:bold; padding-left:10px;}
+.m_r_title span{ float:right; margin-right:10px}
+.m_l_title{ width:190px; height:30px;line-height:32px; font-size:14px; font-weight:bold;padding-left:10px;}
+.m_l_title span{ float:right; margin-right:10px;}
+#m_l_title label{ line-height:32px; font-size:14px; font-weight:bold; padding-left:10px; padding-right:80px;}
+.l_list{ width:176px; height:156px; padding-top:4px;padding-left:24px;line-height:27px;}
+#l_list2{ width:176px; height:129px; padding-top:6px; padding-left:24px; line-height:27px;}
+#search{ width:200px; height:80px;}
+#search input{ width:180px; height:20px; margin-top:10px; margin-left:8px;}
+#search select{ float:left;width:75px; margin-top:10px;height:20px;margin-left:8px;}
+#search img{padding-left:8px; padding-top:10px}
+
+.m_list{ width:750px; height:212px;}
+.m_list ul{ margin-left:6px; padding-top:10px;}
+.m_list li{float:left;width:145px; height:175px; text-align:center;}
+.m_list li img{width:140px; height:140px; }
+.m_list small{ font-size:12px; color:#ccc;}
+.m_list img{ padding:4px;border:1px #ccc solid;}
+
+#m_body{ width:750px; height:377px;background:#FFF;}
+#m_box{ float:left;padding-top:10px; padding-left:10px; line-height:26px;}
+#m_box a{ color:#006699; text-decoration:none;}
+#m_box img{ float:right;}
+#new{ width:750; height:380px; background:#FFF}
+#botton{ height:88px; line-height:26px;padding-top:20px;text-align:center; background:#FFF;}
+#botton a{ padding-left:5px; padding-right:5px;}
+#botton li{ float:left;}
+.friends{ margin-top:10px;}
+.friends li{ float:left; width:150px; height:25px; line-height:25px; padding-left:10px;  }
+#m_box h1{ font-size:16px; color:#ff6600; text-align:center;}
+ .abbr{ text-align:center;}
+#m_box {text-align:justify; text-justify:inter-ideograph; }
+.news_li LI{ height:30PX; line-height:30PX; padding-left:15px; background:url(Images/ico_red.jpg) no-repeat 10px }
+.news_li LI SPAN{ float:right; margin-right:10px;}
+#m_head td { text-align:center}
+#m_head td img{ width:60px; height:80px;}
+#m_head th{ height:30px; line-height:30px; background:#eee;}
+.tables{ padding-top:10px; border-top:1px dotted #ccc;}
+.tables table{border-collapse:collapse}
+.tables  td{ border:1px solid #ccc; }

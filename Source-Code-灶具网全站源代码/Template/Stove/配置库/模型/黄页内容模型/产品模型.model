@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>31</ModelID>
+    <ModelName>产品模型</ModelName>
+    <Description />
+    <TableName>ZL_Page_cpmx</TableName>
+    <ItemName>商品</ItemName>
+    <ItemUnit>件</ItemUnit>
+    <ItemIcon>Product.gif</ItemIcon>
+    <ModelType>4</ModelType>
+    <ContentModule>/内容页/默认产品模型内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

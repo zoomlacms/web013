@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="ZoomLa.WebSite.Jobs.SendResume, App_Web_x3y5hkrv" enableEventValidation="false" viewStateEncryptionMode="Never" %>

@@ -1,0 +1,153 @@
+﻿{ZL.Source id="视频数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="视频数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="视频数据源标签" FD="Tagkey" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+{ZL:HTML5()/}
+<script src="/js/jquery-1.5.1.min.js" type="text/javascript"></script>
+<script src="{$CssDir/}/js/slid.js"></script>
+<script src="{$CssDir/}js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="{$CssDir/}js/common.js"></script>
+<script type="text/javascript" src="{$CssDir/}js/page.js"></script>
+<style>
+#menu{ZL.Label id="抽取父节点ID" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" /}  a{color:#000; font-weight:bold; background:url({$CssDir/}Images/navli_bg.jpg)  no-repeat; }
+#next a{ position:absolute; right:10px; top:45%; width:39px; height:80px; display:block; z-index:999; text-indent:-3333px; background:url({$CssDir/}images/btnR_1.png) no-repeat;}
+#next a:hover{background:url({$CssDir/}images/btnR_2.png) no-repeat;}
+#prov a{ position:absolute; width:39px; height:80px; left:10px; top:45%; display:block; z-index:999; text-indent:-3333px; background:url({$CssDir/}images/btnL_1.png) no-repeat;}
+#prov a:hover{background:url({$CssDir/}images/btnL_2.png) no-repeat;}
+</style>
+
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div id="mysite">
+<p>您的位置：<a href="/">{$SiteName/}</a>>>{ZL.Label id="抽取父节点ID名与链接" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" /}>><a href="{ZL:GetNodeUrl({SField sid="视频数据源标签" FD="NodeID" page="0"/})/}">{ZL.Label id="输出指定ID节点名" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" /}</a>>>{SField sid="视频数据源标签" FD="Title" page="0"/}</p>
+</div>
+
+<!--内容主体开始 -->
+<div id="next">{ZL.Label id="下一篇文章" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" /}</div>
+<div id="prov">{ZL.Label id="上一篇文章" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" /}</div>
+
+<div class="spnr">
+<div id="video">
+<div class="video">
+<div id="player5" style=" float:left;width:960px; height:320px; margin:0px; border:solid 2px #50031a; margin-left:5px;" ></div>
+<script type="text/javascript" src="{$CssDir/}js/flv.js"></script>
+<script type="text/javascript"> 
+	var s5 = new SWFObject("{$CssDir/}swf/FlvPlayer201002.swf","playlist","960","320","7");
+	s5.addParam("allowfullscreen","true");
+	s5.addVariable("autostart","false");
+	s5.addVariable("image","{SField sid="视频数据源标签" FD="picurl" page="0"/}");
+	s5.addVariable("file","{SField sid="视频数据源标签" FD="url" page="0"/}");
+	s5.addVariable("width","960");
+	s5.addVariable("height","320");
+	s5.write("player5");
+</script>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="m b10"></div>
+<div id="vo_main">
+<div class="v_main_l">
+<div id="intro_con">
+<div class="tit_cont">内容介绍</div>
+<p>汽车大奖花落成都 人人争做健康使者</p>
+</div>
+<div id="Poll">
+<div class="pubtit">
+<div class="Polltitle">相关评论</div>
+<div class="puball">共0条 [<a href="#">查看全部</a>]</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<form name="form2" method="post" action="/PubAction.aspx">
+<p class="publevel"><label id="pl"><span id="best"><input name="pl" type="radio" value="好评" checked="checked" />好评 <img src="{$CssDir/}Images/good.jpg"></span><span id="good"><input type="radio" name="pl" value="中评" />中评 <img src="{$CssDir/}Images/better.jpg"></span><span id="bad"><input type="radio" name="pl" value="差评" />差评 <img src="{$CssDir/}Images/worse.jpg"></span></label>
+<input name="PubTitle" type="hidden" id="PubTitle" size="50" value="{SField sid="视频数据源标签" FD="Title" page="0"/}">
+      <input type="hidden" name="PubID" id="PubID" value="2">
+      <input type="hidden" name="PubContentid" id="PubContentid" value="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}">
+      <input name="PubContent" type="hidden" id="PubContent" value="对{SField sid="视频数据源标签" FD="Title" page="0"/}的评论"></p>
+<p class="wordlt">附加文字在200字以内，当前已经输入 <span style="color:red;" id="chars">0</span> 字<br>
+<textarea name="fjym" cols="70" rows="5" id="fjym" onfocus="F();" onkeyup="S();"></textarea></p>
+<input type="submit" name="button2" id="button2" onClick="c()" value="提 交" class="btnbg">
+</form>
+<ul class="liscore">
+<li>
+<span style="background:#ECFDD2;float:right;">{ZL.Label id="视频具体项投票数" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" pl="好评" /} </span>
+<span style="float:left;">好评 <img src="{$CssDir/}Images/good.jpg"></span>
+<div class="line_yo"><div style="background:#FFA40D; width:{ZL.Label id="视频具体项投票比例" pl="好评" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" /}; height:10px;"></div></div><span class="percent">{ZL.Label id="视频具体项投票比例" pl="好评" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" /}</span>
+<div class="clear"></div>
+</li>
+
+<li>
+<span style="background:#F5FEE9;float:right;">{ZL.Label id="视频具体项投票数" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" pl="中评" /} </span>
+<span style="float:left;">中评 <img src="{$CssDir/}Images/better.jpg"></span>
+<div class="line_yo"><div style="background:#FFA40D; width:{ZL.Label id="视频具体项投票比例" pl="好评" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" /}; height:10px;"></div></div><span class="percent">{ZL.Label id="视频具体项投票比例" pl="中评" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" /}</span>
+<div class="clear"></div>
+</li>
+
+<li>
+<span style="background:#F9FEF1; float:right;">{ZL.Label id="视频具体项投票数" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" pl="差评" /}</span><span style="float:left;">差评 <img src="{$CssDir/}Images/worse.jpg"></span>
+<div class="line_yo"><div style="background:#FFA40D; width:{ZL.Label id="视频具体项投票比例" pl="好评" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" /}; height:10px;"></div></div><span class="percent">{ZL.Label id="视频具体项投票比例" pl="差评" GeneralID="{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" /}</span>
+<div class="clear"></div>
+</li>
+</ul>
+</div>
+</div><!-- v_main_l end -->
+
+<div class="v_main_r">
+
+<div class="v_type">
+<div class="vo_title va">按分类浏览</div>
+<ul>
+<li><a href="{ZL:GetNodeLinkUrl(51)/}">企业宣传({ZL.Label id="统计指定节点信息总数" NodeID="51" /})</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(52)/}">活动视频({ZL.Label id="统计指定节点信息总数" NodeID="52" /})</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(53)/}">人物专访({ZL.Label id="统计指定节点信息总数" NodeID="53" /})</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(54)/}">其他视频({ZL.Label id="统计指定节点信息总数" NodeID="54" /})</a></li>
+</ul>
+<div class="clear"></div>
+</div><!-- v_type end -->
+
+<div class="va_list hotlist">
+<div class="vo_title va">点播排行</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性_按点击" NodeID="5" TitleNum="30" ShowNum="10" /}
+</ul>
+<div class="clear"></div>
+</div><!-- va_list end -->
+
+</div><!-- v_main_r end -->
+<div class="clear"></div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+function S() {
+Inner('chars', Dd('fjym').value.length);
+}
+function c(){
+if(Dd('fjym').value.length > 200) {
+confirm('内容最多200字');
+Dd('content').focus();
+return false;
+}
+return true;
+}
+
+$("better").width()=33%;
+
+
+  var a=document.getElementById("cmain_r").offsetHeight;
+  if(a<438){
+document.write('<style>#cmain_r{ height:438px;}</style>');
+  }
+else{
+document.getElementById('nmain_l').style.height=document.getElementById('cmain_r').offsetHeight+'px';	  
+  	 }
+</script>

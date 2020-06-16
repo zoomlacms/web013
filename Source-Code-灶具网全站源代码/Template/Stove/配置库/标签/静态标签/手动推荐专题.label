@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>680</LabelID>
+    <LabelName>手动推荐专题</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;li&gt;&lt;a href="/Special_3/Default.aspx" title="金帝集成灶第一届市场"&gt;&lt;img src="{$CssDir/}Images/sz.jpg" alt="金帝集成灶第一届市场"&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="/Special_3/Default.aspx"&gt;金帝集成灶..&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/Special_1/Default.aspx" title="SAKACO板川第二届健"&gt;&lt;img src="{$CssDir/}Images/sz1.jpg" alt="SAKACO板川第二届健"&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="/Special_1/Default.aspx"&gt;SAKACO板川第..&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/Special_4/Default.aspx" title="2012年集成灶品牌五一"&gt;&lt;img src="{$CssDir/}Images/sz1.jpg" alt="2012年集成灶品牌五一"&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="/Special_4/Default.aspx"&gt;2012年集成灶..&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

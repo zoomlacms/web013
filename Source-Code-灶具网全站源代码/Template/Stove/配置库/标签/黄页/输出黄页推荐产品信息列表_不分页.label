@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>695</LabelID>
+    <LabelName>输出黄页推荐产品信息列表_不分页</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>黄页</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数|UserName,10,1,用户名|TitleNum,30,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_Page_cpmx on ZL_CommonModel.ItemID=ZL_Page_cpmx.ID</LabelTable>
+    <LabelField>ZL_CommonModel.CreateTime,ZL_CommonModel.GeneralID,ZL_CommonModel.Title,ZL_Page_cpmx.Thumbpic</LabelField>
+    <LabelWhere>(ZL_CommonModel.FirstNodeID=@NodeID OR ZL_CommonModel.NodeID=@NodeID) And ZL_CommonModel.Status=99 And ZL_CommonModel.Inputer='@UserName' And ZL_CommonModel.TableName='ZL_Page_cpmx'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.Hits DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;a href="/page/PageContent.aspx?ItemID={Field="GeneralID"/}&amp;pageid={$GetRequest(pageid)$}&amp;class=1" title="{Field="Title"/}"&gt;
+&lt;img src="{ZL:GetPicUrl({Field="Thumbpic"/})/}" title="{Field="Title"/}"&gt;&lt;br/&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;
+&lt;br/&gt;&lt;small&gt;{ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;/small&gt;&lt;/li&gt; {/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

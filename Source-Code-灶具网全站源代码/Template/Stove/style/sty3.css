@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#edf9b7;}
+#top_bg{ margin:auto; background:url(images/comp/green_bg.jpg) top center repeat-x;}
+#top_com{ color:#006602;}
+#top_1{ background:#eef7fb;}
+#top_nav{ height:29px;background:url(images/comp/green_nav.gif) repeat-x; border-bottom:1px #5DA61A solid;}
+#top_nav li{border-right:1px #96d09d solid;}
+#top_nav a{ color:#fff;}
+#top_nav li a:hover{ background:url(images/comp/green_on.gif) repeat-x; color:#006602; text-decoration:none;}
+#m_l{ float:left; width:200px; background:url(images/comp/green_index_l.jpg) no-repeat;}
+.m_r_title{background:url(images/comp/green_t.jpg) repeat-x; }
+#m_head{ border-left:#7DBE0A 1px solid; border-right:#7DBE0A 1px solid; border-bottom:#7DBE0A 1px solid;}

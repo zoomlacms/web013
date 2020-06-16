@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>703</LabelID>
+    <LabelName>输出黄页企业资质列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>黄页</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数|UserName,10,1,用户名|TitleNum,30,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_Page_qyzz on ZL_CommonModel.ItemID=ZL_Page_qyzz.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_Page_qyzz.fzjg,ZL_Page_qyzz.fzsj,ZL_Page_qyzz.pic,ZL_Page_qyzz.sym,ZL_Page_qyzz.yxqz,ZL_CommonModel.Title</LabelField>
+    <LabelWhere>(ZL_CommonModel.FirstNodeID=@NodeID OR ZL_CommonModel.NodeID=@NodeID) And ZL_CommonModel.Status=99 And ZL_CommonModel.Inputer='@UserName'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;tr&gt;&lt;td&gt;&lt;a href="/page/PageContent.aspx?ItemID={Field="GeneralID"/}&amp;pageid={$GetRequest(pageid)$}" title="{Field="Title"/}"&gt;
+&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" title="{Field="Title"/}"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="/page/PageContent.aspx?ItemID={Field="GeneralID"/}&amp;pageid={$GetRequest(pageid)$}" title="{Field="Title"/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;{Field="fzjg"/}&lt;/td&gt;
+&lt;td&gt;{ZL:FormatDate({Field="fzsj"/},yyyy-MM-dd)/}&lt;/td&gt;
+&lt;td&gt;{Field="yxqz"/}&lt;/td&gt;
+&lt;/tr&gt;{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,164 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <FieldID>1532</FieldID>
+    <ModelId>9</ModelId>
+    <FieldName>busitype</FieldName>
+    <FieldAlias>商户类型</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>ListBoxType</FieldType>
+    <Content>1=制造商|服务商|贸易商</Content>
+    <OrderId>1</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1533</FieldID>
+    <ModelId>9</ModelId>
+    <FieldName>Area</FieldName>
+    <FieldAlias>所有地区</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>true</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>GradeOptionType</FieldType>
+    <Content>GradeCate=1,Direction=0</Content>
+    <OrderId>2</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1546</FieldID>
+    <ModelId>9</ModelId>
+    <FieldName>fiv</FieldName>
+    <FieldAlias>企业视频</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>SmallFileType</FieldType>
+    <Content>MaxFileSize=102400,UploadFileExt=avi|rm|real|mpge|mpg|swf|flv|doc|ppt|xls|docx|txt|accdb|xlsx|sql|jpg|doc|xls|f4v|mp3|mp4</Content>
+    <OrderId>3</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1551</FieldID>
+    <ModelId>9</ModelId>
+    <FieldName>banner</FieldName>
+    <FieldAlias>首页banner</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>PicType</FieldType>
+    <Content>Warter=0,MaxPicSize=102400,PicFileExt=jpg|gif|bmp|png</Content>
+    <OrderId>4</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1552</FieldID>
+    <ModelId>9</ModelId>
+    <FieldName>mainsale</FieldName>
+    <FieldAlias>主营产品</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>ListBoxType</FieldType>
+    <Content>1=集成灶|油烟机|消毒柜|燃气灶|电机|空调|电磁锅|洗碗机|冰箱|豆浆机|热水器|酒柜|液晶电视|3D电视|LED电视|家庭影院|其他分类</Content>
+    <OrderId>5</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1607</FieldID>
+    <ModelId>9</ModelId>
+    <FieldName>copyright</FieldName>
+    <FieldAlias>版权信息</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>MultipleTextType</FieldType>
+    <Content>Width=500,Height=200</Content>
+    <OrderId>6</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>1643</FieldID>
+    <ModelId>9</ModelId>
+    <FieldName>Nstyle</FieldName>
+    <FieldAlias>风格</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>OptionType</FieldType>
+    <Content>2=橙黄|1||天蓝|2||淡绿|3||深紫|4||海蓝|5||黑色|6,Property=True,Default=</Content>
+    <OrderId>7</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>true</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

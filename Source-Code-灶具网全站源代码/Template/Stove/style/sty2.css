@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#fff;}
+#top_bg{ margin:auto; background:url(images/comp/blue_bg.jpg) top center no-repeat;}
+#top_1{ background:#eef7fb;}
+#top_nav{ height:29px;background:url(images/comp/nav_bg.jpg) repeat-x; border-bottom:1px #DC6B00 solid;}
+#top_nav li{border-right:1px #FEB818 solid;}
+#top_nav li a:hover{ background:url(images/comp/nav_bg2.jpg) no-repeat; color:#FFF; text-decoration:none;}
+#m_l{ float:left; width:200px;  background:url(images/comp/blue_index_l.jpg) no-repeat;}
+.m_r_title{background:url(images/comp/blue_t_bg.jpg) repeat-x; }
+#m_head{ border-left:#79B7EC 1px solid; border-right:#79B7EC 1px solid; border-bottom:#79B7EC 1px solid;}

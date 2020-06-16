@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>682</LabelID>
+    <LabelName>按行业供应产品列表_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>黄页</LabelCate>
+    <LabelDesc />
+    <LabelParam>ShowNum,10,1,显示数|TitleNum,20,1,标题长|hangye,集成灶,1,行业</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_Page_cpmx on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_Page_cpmx.ID</LabelTable>
+    <LabelField>ZL_CommonModel.CreateTime,ZL_CommonModel.GeneralID,ZL_CommonModel.Inputer,ZL_CommonModel.Title,ZL_Page_cpmx.num,ZL_Page_cpmx.price,ZL_Page_cpmx.Procontent,ZL_Page_cpmx.Thumbpic</LabelField>
+    <LabelWhere>tableName = 'ZL_Page_cpmx' And {table1}.dbo.ZL_Page_cpmx.szxy like '@hangye%'</LabelWhere>
+    <LabelOrder>{table1}.dbo.ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;ul&gt;
+{Repeate}&lt;li&gt;&lt;a href="/Page/PageContent.aspx?ItemID={Field="GeneralID"/}&amp;pageid={ZL.Label id="根据会员名输出黄页ID" UserName="{Field="Inputer"/}" /}"&gt;&lt;img src="{ZL:GetPicUrl({Field="Thumbpic"/})/}" alt="{Field="Title"/}" class="ompic" /&gt;&lt;/a&gt;
+&lt;p class="ofmi"&gt;&lt;strong class="omproname"&gt;&lt;a href="/Page/PageContent.aspx?ItemID={Field="GeneralID"/}&amp;pageid={ZL.Label id="根据会员名输出黄页ID" UserName="{Field="Inputer"/}" /}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+&lt;span&gt;{ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;/span&gt;[{ZL.Label id="根据用户名输出公司地区" UserName="{Field="Inputer"/}" /}]&lt;br&gt;
+{ZL.Label id="根据用户名输出公司名称与链接" UserName="{Field="Inputer"/}" /}
+&lt;/p&gt;
+&lt;p class="askprice"&gt;{Field="price"/}&lt;br&gt;{Field="num"/}起订&lt;br&gt;&lt;a href="/Page/PageContent.aspx?ItemID={Field="GeneralID"/}&amp;ask=1"&gt;&lt;img src="{$CssDir/}images/inquiry.gif" alt="询价"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;{/Repeate}
+&lt;/ul&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+{ZL.Page/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

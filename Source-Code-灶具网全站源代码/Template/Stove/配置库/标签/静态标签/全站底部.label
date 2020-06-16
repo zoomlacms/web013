@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>627</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="Content_co3"&gt;&lt;script type="text/javascript" src="{$AdDir/}/201206/18.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div id="foot_bg"&gt;
+&lt;div id="footer"&gt;
+&lt;div class="bm_list"&gt;
+&lt;img src="{$CssDir/}Images/bmicon.gif"&gt; &lt;span&gt;商品保障&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(138)/}"&gt;7天无理由退换货&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(111)/}"&gt;100%保障&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(112)/}"&gt;提供发票&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!--bm_list end--&gt;
+&lt;div class="bm_list"&gt;
+&lt;img src="{$CssDir/}Images/bmicon.gif"&gt; &lt;span&gt;新手帮助&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(113)/}"&gt;免费注册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(114)/}"&gt;开通支付宝&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(115)/}"&gt;支付宝充值&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(11)/}"&gt;帮助中心&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!--bm_list end--&gt;
+&lt;div class="bm_list"&gt;
+&lt;img src="{$CssDir/}Images/bmicon.gif"&gt; &lt;span&gt;支付方式&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(117)/}"&gt;支付宝快捷支付&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(118)/}"&gt;货到付款&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(119)/}"&gt;网上银行支付&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!--bm_list end--&gt;
+&lt;div class="bm_list"&gt;
+&lt;img src="{$CssDir/}Images/bmicon.gif"&gt; &lt;span&gt;商家服务&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;商家入驻&gt;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(1)/}"&gt;商家中心&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(122)/}"&gt;加盟规则&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!--bm_list end--&gt;
+&lt;div class="bm_list"&gt;
+&lt;img src="{$CssDir/}Images/bmicon.gif"&gt; &lt;span&gt;联系我们&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;客服QQ：&lt;a href="tencent://message/?uin=888888888&amp;Site={$SiteName/}&amp;Menu=yes"&gt;888888888&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;联系电话：888888888&lt;/li&gt;
+&lt;li&gt;&lt;a href="mailto:{$WebmasterEmail/}"&gt;E-mail：{$WebmasterEmail/}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!--bm_list end--&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="foot_bm"&gt;
+&lt;p&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(7)/}"&gt;供应&lt;/a&gt; | &lt;a href="#"&gt;求购&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl(1)/}"&gt;公司&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl(59)/}"&gt;品牌&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl(10)/}"&gt;展会&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl(2)/}"&gt;团购&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl({ZL:GetProposeinfo(10)/})/}"&gt;专题&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl(4)/}"&gt;图库&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl(5)/}"&gt;视频&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl(6)/}"&gt;招商&lt;/a&gt; | &lt;a href="#"&gt;加盟信息&lt;/a&gt; | &lt;a href="{ZL:GetInfoUrl(139)/}"&gt;关于我们&lt;/a&gt; | &lt;a href="{ZL:GetInfoUrl(120)/}"&gt;招贤纳士&lt;/a&gt; | &lt;a href="{ZL:GetInfoUrl(121)/}"&gt;联系我们&lt;/a&gt; | &lt;a href="{ZL:GetNodeLinkUrl(56)/}"&gt;友情链接&lt;/a&gt; |  &lt;a href="#"&gt;站点地图&lt;/a&gt; | &lt;a href="/"&gt;意见反馈&lt;/a&gt; &lt;br&gt;
+{$Copyright/}&lt;/p&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

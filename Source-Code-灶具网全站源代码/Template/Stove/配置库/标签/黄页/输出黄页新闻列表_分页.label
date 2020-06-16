@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>702</LabelID>
+    <LabelName>输出黄页新闻列表_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>黄页</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数|UserName,1,1,用户名|TitleNum,30,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel</LabelTable>
+    <LabelField>CreateTime,GeneralID,Title</LabelField>
+    <LabelWhere>ZL_CommonModel.NodeID=@NodeID And  ZL_CommonModel.Status=99 And ZL_CommonModel.Inputer='@UserName'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;span&gt;{ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;/span&gt;&lt;a href="/page/PageContent.aspx?ItemID={Field="GeneralID"/}&amp;pageid={$GetRequest(pageid)$}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;&lt;/li&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

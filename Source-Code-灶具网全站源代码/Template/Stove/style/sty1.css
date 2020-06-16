@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#FFB619;}
+#top_bg{ margin:auto; background:url(images/comp/bg.jpg) top center repeat-x;}
+#top_1{ background:#FFF9C8;}
+#top_nav{ height:29px;background:url(images/comp/nav_bg.jpg) repeat-x; border-bottom:1px #DC6B00 solid;}
+#top_nav li{border-right:1px #FEB818 solid;}
+#top_nav li a:hover{ background:url(images/comp/nav_bg2.jpg) no-repeat; color:#FFF; text-decoration:none;}
+#m_l{ float:left; width:200px;  background:url(images/comp/index_l_bg.jpg) no-repeat;}
+.m_r_title{background:url(images/comp/title_bg.jpg) repeat-x; }

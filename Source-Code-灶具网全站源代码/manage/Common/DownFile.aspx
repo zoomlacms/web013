@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="manage_Common_DownFile, App_Web_dzbiiln0" enableEventValidation="false" viewStateEncryptionMode="Never" %>

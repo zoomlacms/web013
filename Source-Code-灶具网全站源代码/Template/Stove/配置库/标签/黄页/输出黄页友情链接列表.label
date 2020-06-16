@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>697</LabelID>
+    <LabelName>输出黄页友情链接列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>黄页</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数|UserName,1,1,用户名</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_Page_friend on ZL_CommonModel.ItemID=ZL_Page_friend.ID</LabelTable>
+    <LabelField>ZL_CommonModel.Title,ZL_Page_friend.url</LabelField>
+    <LabelWhere> ZL_CommonModel.NodeID=@NodeID And ZL_CommonModel.Status=99 And ZL_CommonModel.Inputer='@UserName'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;a href="{Field="url"/}" target="_blank"&gt;{Field="Title"/}&lt;/a&gt;&lt;/li&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>
